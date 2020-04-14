@@ -147,7 +147,6 @@ nav{
     min-height: 900px;
     padding-top: 71px;
     padding-bottom: 65px;
-    text-align: center;
 }
 
 .reasons .reasons-btn{
@@ -168,6 +167,7 @@ nav{
 }
 .reasons .reasons-header{
     margin-top: 38px;
+    margin-bottom: 40px;
     font-size: 38px;
     font-weight: bold;
     font-stretch: normal;
@@ -177,4 +177,37 @@ nav{
     text-align: center;
     color: #222222;
     text-transform: uppercase;
+  }
+
+  .reasons .card-reason .img-bg-round{
+    width: 113px;
+    height: 113px;
+    background-color: #1eacc7;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .reasons .card-reason .img-bg-round img{
+    /* width: 64px;
+    height: 64px; */
+    /* background-color: #ffffff; */
+  }
+
+  .reasons .card-reason p {
+    font-size: 15px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: justify;
+    color: #202020;
+  }
+  
+  .reasons .card-reason span{
+    text-align: left;
+    font-size: 17px;
+    font-weight: normal;
+    color: #1eacc7;
   }
