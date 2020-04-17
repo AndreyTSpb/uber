@@ -202,48 +202,64 @@ nav
 .mobile-version
   height: 864px
   background-color: #1eacc7
-  padding-top: 48px;
+  padding-top: 48px
+  padding-bottom: 80px
   background-image: url("../img/bg/bg-mobile-version.png")
   background-repeat: no-repeat
 
-.cart-mobile
-  width: 320px
-  height: 280px
-  text-align: center
-  margin-top: 19px
-  background-image: url("../img/light-price.png")
-  background-repeat: no-repeat
-  
-  p 
-    display: block
-    font-size: 24px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.29;
-    letter-spacing: normal;
-    text-align: center;
-    color: #000000
-
-
-.cart-mobile:hover
-  background-image: url("../img/bg/black-squer.png")
-  background-repeat: no-repeat
-  opacity: 0.9
-  mix-blend-mode: multiply
-  p 
-    color: #FCFCFC
-
-.btn-plus
-  margin: 0 auto
-  border-radius: 100%
-  width: 26px
-  height: 26px
-  background-color: #000000
-  
-  a 
-    display: block
+  .cart-mobile
+    width: 320px
+    height: 280px
     text-align: center
-    font-size: 22px
-    color: #1eacc7
+    margin-top: 19px
+    position: relative
     
+    img 
+      display: block
+      margin: 0 auto
+
+
+  .cart-mobile-hover
+    display: flex
+    justify-content: center
+    text-align: center
+    width: 320px
+    height: 280px
+    position: absolute
+    left: 0
+    top: 0
+
+    p 
+      padding-top: 92px
+      display: block
+      font-size: 24px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.29;
+      letter-spacing: normal;
+      text-align: center;
+      color: #000000
+
+  .cart-mobile-hover:hover
+    background-color: rgba(0, 0, 0, 0.6)
+    // mix-blend-mode: multiply
+    p 
+      color: #FCFCFC
+
+  .btn-plus
+    position: absolute
+    left: 50%
+    bottom: 35px
+    margin: 0 auto
+    border-radius: 100%
+    width: 26px
+    height: 26px
+    background-color: #000000
+    
+    a 
+      display: block
+      text-align: center
+      font-size: 22px
+      color: #1eacc7
+      
