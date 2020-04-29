@@ -1,3 +1,13 @@
+$main-color: #1eaee7
+$second-color: #ff5656
+$tree-color: #ff56ff
+
+=btn_hover
+  &:hover
+    background-image: none
+    background-color: $main-color
+
+
 *
   font-family: 'Roboto', sans-serif
 
@@ -18,7 +28,7 @@ nav
   justify-content: space-between
   list-style-type: none
 
-  .menu-item
+  &-item
     border-right: 2px dotted black
     padding-right: 28px
 
@@ -79,6 +89,7 @@ nav
     text-align: center
     color: #ffffff
     text-transform: uppercase
+    +btn_hover
 
 .header_title
   margin: 0
@@ -113,7 +124,7 @@ nav
   text-align: center
   padding: 150px 0 130px 0
 
-  .promo-desc
+  &-desc
     margin-top: 23px
     font-size: 18px
     font-weight: normal
@@ -137,6 +148,7 @@ nav
     letter-spacing: normal
     text-align: center
     text-transform: uppercase
+    +btn-hover
     
 
 .reasons-btn
@@ -160,7 +172,7 @@ nav
   padding-top: 71px
   padding-bottom: 65px
 
-  .reasons-header
+  &-header
     margin-top: 38px
     margin-bottom: 40px
     font-size: 38px
