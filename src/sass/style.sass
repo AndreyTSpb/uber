@@ -329,3 +329,49 @@ nav
     margin: 0 auto
     bottom: 138px
     text-align: center
+
+.conditions
+  padding: 68px 0 84px 0
+
+  .warning
+    color: $second-color
+    margin-bottom: 0
+    li:before
+        content: ""
+        display: inline-block
+        width: 21px
+        height: 21px
+        border: $second-color solid 1px
+        border-radius: 100%
+        vertical-align: middle
+
+  &-block
+    margin: 32px 0 32px 0
+    color: $main-color
+    font-size: 17px
+
+    .title
+      font-size: 22px
+    
+    ul
+      padding-left: 20px
+
+    li
+      
+      list-style-type: none
+      font-weight: 300
+      color: #222222
+      //display: inline-block
+      line-height: 2
+      
+      &:before
+        content: ""
+        display: inline-block
+        width: 21px
+        height: 21px
+        border: $main-color solid 1px
+        border-radius: 100%
+        vertical-align: middle
+        transform: translate(-5px , -2px)
+
+    .description
