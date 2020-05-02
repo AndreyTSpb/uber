@@ -190,7 +190,7 @@ nav
     .img-bg-round
       width: 113px
       height: 113px
-      background-color: #1eacc7
+      background-color: $main-color
       border-radius: 100%
       display: flex
       justify-content: center
@@ -209,11 +209,11 @@ nav
       text-align: left
       font-size: 17px
       font-weight: normal
-      color: #1eacc7
+      color: $main-color
 
 .mobile-version
   height: 864px
-  background-color: #1eacc7
+  background-color: $main-color
   padding-top: 48px
   padding-bottom: 80px
   background-image: url("../img/bg/bg-mobile-version.png")
@@ -273,7 +273,7 @@ nav
       display: block
       text-align: center
       font-size: 22px
-      color: #1eacc7
+      color: $main-color
       
 .uber-x
   min-height: 900px
@@ -374,4 +374,118 @@ nav
         vertical-align: middle
         transform: translate(-5px , -2px)
 
-    .description
+.all_word
+  height: 717px
+  width: 100%ß
+  background-image: url("../img/bg/Layer_33.webp")
+  background-repeat: no-repeat
+  background-position: center
+  background-color: #080816
+  padding: 49px 0 49px 0
+  
+  .container
+    position: relative
+    height: 620px
+
+  &-btn 
+    width: 112px
+    height: 24px
+    display: block
+    margin: 0 auto
+    background-color: #ffffff
+    font-size: 11px
+    ont-weight: 500;
+    font-stretch: normal
+    font-style: normal
+    letter-spacing: normal
+    text-align: center
+    color: #000000
+    text-transform: uppercase
+
+  .header_title
+    margin-top: 32px
+    color: #fff
+
+  .sub-header-title
+    margin-top: 20px
+    color: #fff
+
+  &_footer 
+    text-align: center
+    font-family: Roboto
+    font-size: 15px
+    font-weight: 400
+    line-height: 68px
+    text-transform: uppercase
+    position: absolute
+    bottom: 0
+    left: 50%
+    transform: translateX(-50%)
+    a
+     color: $main-color
+    
+.footer
+  display: block
+  min-height: 155px
+  position: relative
+
+  .lang
+    margin-top: 19px
+    margin-bottom: 39px
+    text-align: center
+    font-size: 11px
+    font-weight: 400
+    text-transform: uppercase
+
+    a 
+      color: #1fbad6
+
+  &-blue-line
+    position: absolute
+    top: 15px
+    left: 50%
+    transform: translateX(-50%)
+    width: 299px
+    height: 4px
+    background-color: #1fbad6
+
+  &-black-line
+    position: absolute
+    top: 100%
+    height: 8px
+    width: 100%
+    background-color: #070716
+
+  &-first-menu
+    display: flex
+    justify-content: space-between 
+    font-size: 15px
+    font-weight: 300
+    line-height: 68px
+    text-transform: uppercase
+    list-style-type: none
+    margin: 0 auto
+    margin-top: 32px
+    
+    li 
+      display: inline /* Отображать как строчный элемент */
+
+      a 
+        color: #070716
+  
+  &-second-menu
+    display: flex
+    justify-content: space-between
+    font-size: 11px
+    font-weight: 300
+    text-transform: uppercase
+    list-style-type: none
+    margin: 0 auto
+    margin-top: 15px
+
+    li 
+      display: inline /* Отображать как строчный элемент */
+      margin-right: 5px
+
+      a 
+        color: #999
