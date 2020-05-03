@@ -337,13 +337,12 @@ nav
     color: $second-color
     margin-bottom: 0
     li:before
-        content: ""
-        display: inline-block
         width: 21px
         height: 21px
         border: $second-color solid 1px
         border-radius: 100%
         vertical-align: middle
+        color: $second-color
 
   &-block
     margin: 32px 0 32px 0
@@ -365,14 +364,18 @@ nav
       line-height: 2
       
       &:before
-        content: ""
-        display: inline-block
+        font-family: FontAwesome
+        content: "\f00c"
+        vertical-align: middle
+        //display: inline-block
         width: 21px
         height: 21px
         border: $main-color solid 1px
         border-radius: 100%
-        vertical-align: middle
-        transform: translate(-5px , -2px)
+        //transform: translate(-5px , -2px)
+        padding: 2px
+        margin-right: 5px
+        color: $main-color
 
 .all_word
   height: 717px
@@ -429,6 +432,48 @@ nav
   min-height: 155px
   position: relative
 
+  &-social-icons
+    min-height: 155px
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    padding-left: 25px
+
+    div
+      display: inline
+      width: 35px
+      height: 35px
+      background-color: #070716
+      border-radius: 100%
+      margin-right: 8px
+      position: relative
+
+      a 
+        width: 100%
+        display: inline-block
+        color: #ffffff
+        font-weight: 500
+        position: absolute
+        margin: 0 auto
+        text-align: center
+        top: 50%
+        transform: translateY(-50%)
+        
+  &-button-stores
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    padding-right: 25px
+    a
+      display: inline-block
+      margin-left: 6px
+      img
+        width: 95px
+        height: 25px 
+        border: 0
+        border-radius: 5px
+
+
   .lang
     margin-top: 19px
     margin-bottom: 39px
@@ -469,6 +514,7 @@ nav
     
     li 
       display: inline /* Отображать как строчный элемент */
+      text-align: center
 
       a 
         color: #070716
