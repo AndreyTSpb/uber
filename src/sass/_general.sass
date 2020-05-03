@@ -107,7 +107,7 @@ nav
   background-image: url("../img/bg/bg-promo.png")
   background-repeat: no-repeat
   color: #ffffff
-  height: 799px
+  min-height: 799px
   text-align: center
   padding: 150px 0 130px 0
 
@@ -202,8 +202,7 @@ nav
 
     
 .mobile-version
-  height: 864px
-  background-color: $main-color
+  min-height: 864px
   padding-top: 48px
   padding-bottom: 80px
   background-image: url("../img/bg/bg-mobile-version.png")
@@ -252,6 +251,7 @@ nav
   .btn-plus
     position: absolute
     left: 50%
+    transform: translateX(-50%)
     bottom: 35px
     margin: 0 auto
     border-radius: 100%
@@ -368,8 +368,8 @@ nav
         color: $main-color
 
 .all_word
-  height: 717px
-  width: 100%ß
+  min-height: 717px
+  width: 100%
   background-image: url("../img/bg/Layer_33.webp")
   background-repeat: no-repeat
   background-position: center
@@ -423,12 +423,21 @@ nav
   min-height: 155px
   position: relative
 
+  .wrap-footer
+    width: 100%
+    display: flex
+    justify-content: space-between
+
+  &-menu
+    width: 33%
+
   &-social-icons
     min-height: 155px
     display: flex
     justify-content: flex-start
     align-items: center
     padding-left: 25px
+    width: 33%
 
     div
       display: inline
@@ -455,6 +464,7 @@ nav
     justify-content: flex-end
     align-items: center
     padding-right: 25px
+    width: 33%
     a
       display: inline-block
       margin-left: 6px
@@ -497,11 +507,11 @@ nav
     justify-content: space-between 
     font-size: 15px
     font-weight: 300
-    line-height: 68px
     text-transform: uppercase
     list-style-type: none
     margin: 0 auto
-    margin-top: 32px
+    margin-top: 42px
+    padding: 0
     
     li 
       display: inline /* Отображать как строчный элемент */
@@ -519,6 +529,7 @@ nav
     list-style-type: none
     margin: 0 auto
     margin-top: 15px
+    padding: 0
 
     li 
       display: inline /* Отображать как строчный элемент */
