@@ -1,13 +1,33 @@
 window.addEventListener('load', (event) => {
-    let menu_btn       = document.querySelector('.menu-btn'),
-        close_menu_btn = document.querySelector('.menu-close-btn');
+    /**
+     * Обработка вызова меню
+     */
+    let menu_btn       = document.querySelector('.menu-btn');
     if(menu_btn !== null){
-        let btn = menu_btn.querySelector('button');
-        btn.addEventListener('click', open_menu);
+        menu_btn.addEventListener('click', ()=>{
+            if(menu_btn.classList.contains('menu-btn-active')){
+                close_menu();
+                menu_btn.classList.remove('menu-btn-active');
+            }else{
+                open_menu();
+                menu_btn.classList.add('menu-btn-active');
+            }
+        });
     }
-    if(close_menu_btn !== null){
-        close_menu_btn.addEventListener('click', close_menu);
-    }
+
+    /**
+     * Обработка события при нажатии на элемент меню
+     */
+    let link_menu = document.querySelectorAll('.menu-item');
+    if(link_menu.length > 0){
+        link_menu.forEach((e)=>{
+            e.addEventListener('click', ()=>{
+                menu_btn.classList.remove('menu-btn-active');
+                close_menu();
+            }); 
+        });
+    } 
+
 
     /**
      * The function of opening the main menu for the mobile version of site
