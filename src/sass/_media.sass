@@ -13,8 +13,7 @@
 
     .mobile-version 
         .cart-mobile 
-            width: 300px
-            height: 270px
+            margin: 0 auto
             img 
                 width: 300px
                 height: 270px
@@ -51,17 +50,22 @@
             width: 100%
         .title-logo
             font-size: 11px
-        .sub-header-phone
+        &-phone
             font-size: 18px
-        .sub-header-btn 
+        &-btn 
             width: 100%
             height: 40px
     .reasons
+        .card-reason .card-reason-item
+            display: flex
+            justify-content: center
+
         .card-reason span 
             display: inline-block
             width: 100%
             min-height: 60px
             text-align: center
+
         .card-reason .card-reason-text
             margin-top: 30px
 
@@ -112,48 +116,84 @@
                     &:nth-child(3)
                         transform: rotate(45deg)
 
-    .menu
-        position: fixed
-        margin: 0
-        display: flex
-        flex-direction: column
-        justify-content: start
-        list-style-type: none
-        top: 0
-        left: -550px
-        background: rgba(0,0,0,.8 )
-        padding-top: 30px
-        padding-bottom: 30px
-        width: 70%
-        height: 100%
-        transition: 0.6s all
-
-        &-close-btn
-            display: block
-            width: 35px
-            height: 35px
-            color: #ffffff
-            text-align: center
-            font-size: 30px
-            position: absolute
-            right: 5px
+        .menu
+            position: fixed
+            margin: 0
+            display: flex
+            flex-direction: column
+            justify-content: start
+            list-style-type: none
             top: 0
-            
+            left: -550px
+            background: rgba(0,0,0,.8 )
+            padding-top: 30px
+            padding-bottom: 30px
+            width: 70%
+            height: 100%
+            transition: 0.6s all
 
-        &-active
-            left: 0
-        
-        &-item
-            padding: 0
-            padding-bottom: 10px
-
-            a.menu-link
-                font-size: 20px
-                font-weight: 300
-                font-stretch: normal
-                font-style: normal
+            &-close-btn
+                display: block
+                width: 35px
+                height: 35px
                 color: #ffffff
+                text-align: center
+                font-size: 30px
+                position: absolute
+                right: 5px
+                top: 0
+                
 
+            &-active
+                left: 0
+            
+            &-item
+                padding: 0
+                padding-bottom: 10px
+
+                a.menu-link
+                    font-size: 20px
+                    font-weight: 300
+                    font-stretch: normal
+                    font-style: normal
+                    color: #ffffff
+
+        .sub-header
+
+            &-phone
+                display: block
+                margin-top: 10px
+                color: #ffffff
+                font-size: 18px
+                font-weight: 400
+                text-transform: uppercase
+
+            &-btn
+                display: block
+                margin: 0 auto 
+                margin-top: 10px
+                width: 200px
+                height: 40px
+                
+
+    .promo
+        background-size: cover
+
+        &-sub-header
+            line-height: 45px
     .uber-x-img-in-center
-        width: 100%;
-        height: auto;
+        width: 100%
+        height: auto
+
+    .xs-none
+        display: none
+    .xs-visible
+        display: block
+
+@media ( max-width:  375px)
+    .sub-header
+        .title-logo
+            display: none
+        
+
+            
