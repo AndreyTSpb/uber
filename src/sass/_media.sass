@@ -12,11 +12,9 @@
             padding-right: 0
 
     .mobile-version 
-        .cart-mobile 
-            margin: 0 auto
-            img 
-                width: 300px
-                height: 270px
+        .cart-mobile
+            width: 300px
+            height: 270px
             &-hover
                 width: 300px
                 height: 270px
@@ -191,9 +189,151 @@
         display: block
 
 @media ( max-width:  375px)
-    .sub-header
-        .title-logo
-            display: none
-        
+    header
+        nav
+            height: 35px
 
+        .sub-header
+            height: 62px
+            margin-top: 35px
+
+            &-logo
+                margin-top: 20px
+
+            &-phone
+                font-size: 12px
+
+            &-btn
+                width: 110px
+                height: 22px
+                font-size: 10px
             
+
+            .title-logo
+                display: none
+            
+    .promo
+        min-height: 400px
+        padding-bottom: 140px 0 33px 0
+        &-header
+            font-size: 30px
+        &-sub-header
+            font-size: 20px
+            line-height: 30px
+        &-btn 
+            width: 210px
+            height: 50px
+            margin-top: 72px
+    .reasons
+        padding-top: 22px
+        padding-bottom: 47px
+
+        .card-reason
+            margin-top: 40px 
+            .img-bg-round 
+                width: 103px
+                height: 103px
+        
+    
+    .mobile-version
+        padding-top: 22px
+        padding-bottom: 33px
+        .cart-mobile 
+            width: 290px
+            height: 254px
+            &-hover
+                width: 294px
+                height: 254px
+                background-color: rgba(0, 0, 0, 0.6)
+                p 
+                    color: #FCFCFC 
+    .header_title
+        font-size: 16px
+    .sub-header-title
+        line-height: 21px
+        font-size: 15px
+
+    .uber-x
+        padding: 25px 0 35px 0
+        min-height: 400px
+        background-color: #070716
+        background-image: none
+        &-text-header 
+            margin: 0 auto
+        &-img-in-center
+            top: 40%
+            width: 300px
+            height: 190px
+        &-text-footer
+            bottom: 35px
+            margin-right: 25px
+            color: white
+            font-size: 17px
+            font-weight: 300
+            line-height: 24px
+
+    .conditions
+        padding: 25px 0 35px 0
+        &-block
+            font-size: 16px
+            font-weight: 400
+            line-height: 24px
+            margin: 20px 0 20px 0;
+
+    .all_word
+        min-height: 360px
+        padding: 25px 0 35px 0
+        
+        &_footer
+            font-size: 14px
+            font-weight: 400
+            line-height: 24px
+            text-transform: uppercase
+            width: 200px
+        .sub-header-title 
+            margin-top: 15px
+
+    .footer
+        padding: 25px 0 21px 0
+        .wrap-footer
+            flex-direction: column
+            justify-content: center
+            align-items: center
+        &-blue-line
+            top: 25px
+        &-menu
+            width: 90%
+        &-first-menu
+            margin-top: 25px
+        &-second-menu
+            width: 90%
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+            font-size: 11px
+            font-weight: 300
+            line-height: 24px
+
+        &-social-icons
+            width: 60%
+            padding: 0
+            flex-direction: row
+            justify-content: space-between
+            align-items: center
+            min-height: 30px
+            margin: 0 auto
+            div:last-child
+                margin-right: 0
+
+        &-button-stores
+            flex-direction: row
+            justify-content: space-between
+            width: 90%
+            padding: 0
+            margin: 0 auto
+            margin-top: 19px
+            a 
+                margin: 0
+                &:nth-child(2)
+                    margin: 0 3px 0 3px
+                     

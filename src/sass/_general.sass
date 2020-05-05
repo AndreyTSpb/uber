@@ -39,7 +39,7 @@ nav
   height: 84px
   background-color: rgba(0, 0, 0, 0.6)
 
-  .subheder-logo
+  &-logo
     display: block
     max-width: 100%
     margin-top: 16px
@@ -126,7 +126,7 @@ nav
     font-style: normal
     line-height: 24px
 
-.submit-order-btn
+  &-btn
     display: block
     margin: 0 auto
     margin-top: 118px
@@ -219,12 +219,21 @@ nav
     width: 320px
     height: 280px
     text-align: center
+    margin: 0 auto
     margin-top: 19px
     position: relative
+
+    .example 
+      overflow: hidden
+      display: flex
+      justify-content: center
+      align-items: center
     
     img 
       display: block
       margin: 0 auto
+      height: 100%
+      width: auto
 
 
   .cart-mobile-hover
@@ -382,10 +391,7 @@ nav
   background-position: center
   background-color: #080816
   padding: 49px 0 49px 0
-  
-  .container
-    position: relative
-    height: 620px
+  position: relative
 
   &-btn 
     width: 112px
@@ -419,7 +425,7 @@ nav
     line-height: 68px
     text-transform: uppercase
     position: absolute
-    bottom: 0
+    bottom: 35px
     left: 50%
     transform: translateX(-50%)
     a

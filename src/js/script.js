@@ -2,7 +2,7 @@ window.addEventListener('load', (event) => {
     /**
      * Обработка вызова меню
      */
-    let menu_btn       = document.querySelector('.menu-btn');
+    let menu_btn = document.querySelector('.menu-btn');
     if(menu_btn !== null){
         menu_btn.addEventListener('click', ()=>{
             if(menu_btn.classList.contains('menu-btn-active')){
@@ -50,4 +50,5 @@ window.addEventListener('load', (event) => {
         }
         menu.classList.remove("menu-active");
     }
+    
   });
