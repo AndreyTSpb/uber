@@ -14,22 +14,17 @@ gulp.task('browser-sync', function() {
             baseDir: "src/"
         }
     });
+    gulp.watch("src/*.html").on('change', browserSync.reload);
 });
 
 gulp.task("sass", function(){
     return gulp.src('src/sass/*.+(sass|scss)')
-            .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-            .pipe(rename({
-                prefix: "",
-                suffix: ".min",
-              }))
-            .pipe(autoprefixer({
-                browsers: ['last 2 version'],
-                cascade: false
-            }))
-            .pipe(cleanCSS({compatibility: 'ie8'}))
-            .pipe(gulp.dest('src/css'))
-            .pipe(browserSync.stream());
+        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+        .pipe(rename({suffix: '.min', prefix: ''}))
+        .pipe(autoprefixer())
+        .pipe(cleanCSS({compatibility: 'ie8'}))
+        .pipe(gulp.dest("src/css"))
+        .pipe(browserSync.stream());
 });
 
 
