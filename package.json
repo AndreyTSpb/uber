@@ -1,6 +1,7 @@
 {
   "name": "uber",
   "version": "1.0.0",
+<<<<<<< HEAD
   "description": "uber",
   "main": "gulpfile.js",
   "scripts": {
@@ -28,5 +29,31 @@
   "dependencies": {
     "bootstrap-icons": "^1.2.2",
     "jshint": "^2.12.0"
+=======
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndreyTSpb/uber.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndreyTSpb/uber/issues"
+  },
+  "homepage": "https://github.com/AndreyTSpb/uber#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.13",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-cli": "^2.2.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^4.14.1"
+>>>>>>> 9dfe5acb51fe77e15ac14d93fc2ded8d467457e5
   }
 }

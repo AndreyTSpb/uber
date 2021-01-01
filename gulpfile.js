@@ -1,5 +1,6 @@
 const gulp        = require('gulp');
 const browserSync = require('browser-sync');
+<<<<<<< HEAD
 const sass        = require('gulp-sass');
 const cleanCSS = require('gulp-clean-css');
 const autoprefixer = require('gulp-autoprefixer');
@@ -20,10 +21,32 @@ gulp.task('server', function() {
 
 gulp.task('styles', function() {
     return gulp.src("src/sass/**/*.+(scss|sass)")
+=======
+
+/** Все для преобразования SASS в CSS */
+const sass = require('gulp-sass');
+const rename = require("gulp-rename");
+const autoprefixer = require('gulp-autoprefixer');
+const cleanCSS = require('gulp-clean-css');
+
+// Static server
+gulp.task('browser-sync', function() {
+    browserSync.init({
+        server: {
+            baseDir: "src/"
+        }
+    });
+    gulp.watch("src/*.html").on('change', browserSync.reload);
+});
+
+gulp.task("sass", function(){
+    return gulp.src('src/sass/*.+(sass|scss)')
+>>>>>>> 9dfe5acb51fe77e15ac14d93fc2ded8d467457e5
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe(rename({suffix: '.min', prefix: ''}))
         .pipe(autoprefixer())
         .pipe(cleanCSS({compatibility: 'ie8'}))
+<<<<<<< HEAD
         .pipe(gulp.dest("dist/css"))
         .pipe(browserSync.stream());
 });
@@ -69,3 +92,16 @@ gulp.task('images', function () {
 });
 
 gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'scripts', 'fonts', 'icons', 'html', 'images'));
+=======
+        .pipe(gulp.dest("src/css"))
+        .pipe(browserSync.stream());
+});
+
+
+gulp.task('watch', function(){
+    gulp.watch("src/sass/*.+(sass|scss)", gulp.parallel("sass"));
+    gulp.watch("src/*.html").on("change", browserSync.reload);
+});
+
+gulp.task('default', gulp.parallel('watch', "browser-sync", 'sass'));
+>>>>>>> 9dfe5acb51fe77e15ac14d93fc2ded8d467457e5
